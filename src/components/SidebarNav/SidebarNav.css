@@ -1,0 +1,127 @@
+.sidebar {
+  background-image: linear-gradient(to right, var(--primary-color), var(--hover-color));
+  min-height: 100vh;
+}
+
+.flex-column {
+  padding: 20px;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2em;
+}
+
+.nav-link:hover {
+  color: var(--secondary-hover-color);
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.exit-link {
+  margin-top: 200px;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.exit-link:hover {
+  transform: scale(1.05);
+  color: var(--primary-color);
+  background-color: var(--secondary-hover-color);
+}
+
+.github-link {
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    min-height: auto;
+    padding: 20px 0;
+  }
+
+  .flex-column {
+    padding: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .logo-img {
+    width: 300px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .exit-link {
+    margin-top: 10px;
+    font-size: 0.95em;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .flex-column {
+    padding: 15px;
+  }
+
+  .nav-link {
+    margin-bottom: 8px;
+    font-size: 1em;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .logo-img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .exit-link {
+    margin-top: 5px;
+    font-size: 0.75em;
+    padding: 8px 8px;
+  }
+}
